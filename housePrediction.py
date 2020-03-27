@@ -29,6 +29,6 @@ print(df_train)
 trian_corr =df_train.corr()
 high_corr = trian_corr.index[abs(trian_corr["SalePrice"])>0.6]
 print(high_corr)
-# plt.subplots(figsize=(30, 10))  # 設置長寬尺寸大小
-# sns.heatmap(trian_corr, annot=True, vmax=1, cmap="YlGnBu")
-# plt.show()
+plt.subplots(figsize=(30, 10))  # 設置長寬尺寸大小
+sns.heatmap(trian_corr, annot=True, vmax=1, cmap="YlGnBu")
+plt.show()
