@@ -207,4 +207,3 @@ if __name__ == '__main__':
         f.write('id,SalePrice\n')
         for i in range (len(pred)):
             f.write(str(i+1461)+','+str(float(pred[i]))+'\n')
-            [np.power(2, 9), np.power(2, 10), np.power(2, 11)]
